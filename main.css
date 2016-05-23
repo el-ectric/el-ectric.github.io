@@ -1,8 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic,900,900italic);
+
 html, body {
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
+     font-family:merriweather;
   margin: 0;
   width: 100%;
   height: 100%;
+    
+}
+
+sitetitle {
+    font-size: 42px;
+    color: #615306;
+    text-align: center;
+    padding: auto;
+    display:block;
+    margin-top: 23px;
 }
 
 h1 {
@@ -10,19 +23,22 @@ h1 {
 }
 
 p {
-  max-width: 65%;
+    width: 100%;
   min-width: 500px;
 }
 
 h2 {
-  text-align: center;
-  font-size: 2.6rem;
+    text-align: center;
+    font-size: 35px;
+    /*margin: 10px;*/
+    margin-bottom: -10px;
 }
 
 div {
   padding-right: 30px;
   height: 100%;
   width: 100%;
+    
 }
 
 video {
@@ -35,15 +51,17 @@ video {
 }
 
 .main {
-  padding-left: 30px;
-  min-width: 75%;
+  padding-left: 40px;
 }
 
 .nav {
-  background-color: #FFEE00;
-  max-width: 25%;
-  min-width: 140px;
+  background-color: #F0D84F;
+  min-width: 160px;
+    max-width: 160px;
   flex: 1;
+    height: 100%;
+    padding: 0;
+    border-right: 1px solid #D4B400;
 }
 
 .nav h1 {
@@ -52,21 +70,51 @@ video {
 
 .nav a {
   color: black;
+    text-decoration: none;
+    margin: 0;
+    /*padding: auto;*/
+    padding-right: 0px;
+    border: 1px solid #D4B400;
+    border-left: none;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    display:block;
+    background-color: #E8D046;
+    color: #615306;
+}
+
+.nav a:hover {
+    background-color: #DEC640;
+}
+
+.nav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.nav ul {
+    margin-top: 30px;
+    width: 160px;
+    /*border: 1px solid black;*/
+    padding: 0;
 }
 
 
-.legend {
-  border-left: 4px solid blue;
+.legend, .contests {
+  border-left: 4px solid #4997D0;
   height: auto;
   width: auto;
-  padding: 4px;
-  padding-left: 8px;
+  padding-top: 0px;
+    padding-bottom: 0px;
+  padding-left: 0px;
+    margin-bottom: 40px;
 }
 
-
-nav {
-  background-color: #FFEE00;
-  max-width: 25%;
-  min-width: 140px;
-  flex: 1;
+.contests a {
+    color: black;
+    text-decoration: none;
 }
