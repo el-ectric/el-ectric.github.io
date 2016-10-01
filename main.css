@@ -1,12 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic,900,900italic);
 
 html, body {
-  /*font-family: sans-serif;*/
-     font-family:merriweather;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-    
+    font-family: merriweather,serif;
+    margin: 0;
 }
 
 sitetitle {
@@ -14,7 +10,7 @@ sitetitle {
     color: #615306;
     text-align: center;
     padding: auto;
-    display:block;
+    display: block;
     margin-top: 23px;
 }
 
@@ -22,9 +18,9 @@ h1 {
   font-size: 48px;
 }
 
-p {
+p,h1,h2,h3,h4 {
     width: 100%;
-  min-width: 500px;
+    min-width: 500px;
 }
 
 h2 {
@@ -35,10 +31,6 @@ h2 {
 }
 
 div {
-  padding-right: 30px;
-  height: 100%;
-  width: 100%;
-    
 }
 
 video {
@@ -51,18 +43,20 @@ video {
 }
 
 .main {
-  padding-left: 40px;
-    /*padding-right:-40px;*/
+    padding-left:40px; padding-right: 40px;
+    position: absolute;
+    left: 160px; right:0; top: 0; bottom: 0;
 }
 
 .nav {
   background-color: #F0D84F;
-  min-width: 160px;
-    max-width: 160px;
-  flex: 1;
-    height: 100%;
+  /*flex: 1;
+    height: 100%;*/
     padding: 0;
     border-right: 1px solid #D4B400;
+    position: absolute;
+    left:0; top:0; bottom: 0px;
+    width: 160px;
 }
 
 .nav h1 {
@@ -116,6 +110,6 @@ video {
 }
 
 .contests a {
-    color: black;
+    /*color: #4997D0;*/
     text-decoration: none;
 }
